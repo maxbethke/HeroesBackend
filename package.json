@@ -1,0 +1,38 @@
+{
+  "name": "heroesbackend",
+  "version": "1.0.0",
+  "description": "A REST-API for the  HeroesApp, my first try on Angular2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxbethke/HeroesBackend.git"
+  },
+  "keywords": [
+    "Angular2",
+    "Angular",
+    "REST-API",
+    "APi",
+    "express"
+  ],
+  "author": "Maximilian Bethke <maxbethke@web.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxbethke/HeroesBackend/issues"
+  },
+  "homepage": "https://github.com/maxbethke/HeroesBackend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.32",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
