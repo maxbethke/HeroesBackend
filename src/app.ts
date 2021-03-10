@@ -1,8 +1,16 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import express from "express";
 
-import { Server } from './server';
+import MasterRouter from "./routers/master.router";
 
-const server = new Server();
+console.log(process.env.APP_PORT);
+
+class Server {
+  public app = express();
+  public router = MasterRouter;
+}
+
+const server = new Server;
 
 server.app.use('/api', server.router);
 
