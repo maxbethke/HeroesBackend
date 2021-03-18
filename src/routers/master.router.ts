@@ -1,5 +1,7 @@
 import { Router } from 'express';
+
 import AuthRouter from './auth.router';
+import RuntimeError from '../models/error';
 
 class MasterRouter {
   private _router = Router();

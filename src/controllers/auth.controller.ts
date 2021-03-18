@@ -1,8 +1,8 @@
+import RuntimeError from '../models/error';
+
 class AuthController {
   defaultMethod() {
-    return {
-      text: `You've reached the ${this.constructor.name} default method`
-    };
+    throw new RuntimeError(501, 'Not implemented method');
   }
 }
 
