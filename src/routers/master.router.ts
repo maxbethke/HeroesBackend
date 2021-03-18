@@ -3,7 +3,7 @@ import AuthRouter from './auth.router';
 
 class MasterRouter {
   private _router = Router();
-  private _authRouter = Router();
+  private _authRouter = AuthRouter;
 
   get router() {
     return this._router;
