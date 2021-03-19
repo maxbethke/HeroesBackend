@@ -1,5 +1,6 @@
 import { loadEnv, env } from '../env';
 import express, { Request, Response, NextFunction } from 'express';
+import cors from "cors";
 
 import MasterRouter from "./routers/master.router";
 import RuntimeError from './models/error';
@@ -11,6 +12,8 @@ class Server {
   public router = MasterRouter;
 }
 const server = new Server;
+
+server.app.use(cors());
 
 server.app.use('/api', server.router);
 
